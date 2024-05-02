@@ -1,0 +1,14 @@
+name: archaeo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - parse
+  - jupyterlab
+  - ipykernel
