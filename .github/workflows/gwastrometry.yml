@@ -26,3 +26,9 @@ jobs:
 
     - name: Run script
       run: python gwastrometry.py
+
+    - name: Upload output file
+      uses: actions/upload-artifact@v2
+      with:
+        name: script-output
+        path: output.csv
