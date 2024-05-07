@@ -3,7 +3,7 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3
   - pip
   - numpy
   - pandas
@@ -12,3 +12,5 @@ dependencies:
   - parse
   - jupyterlab
   - ipykernel
+  - nbconvert
+  - pyyaml
