@@ -137,9 +137,9 @@ if __name__ == "__main__":
     newstars = stars + d
     newstars /= np.linalg.norm(newstars, axis=-1)[...,None]
 
-    # stack array to get (nsamp, 3*nstars)
-    newstars = np.hstack(np.transpose(newstars, (1,0,2)))
-    h = ','.join([f"X{i},Y{i},Z{i}" for i in range(newstars.shape[1]//3)])
+    # stack array to get (nstars, 3*nsamp)
+    newstars = np.hstack(newstars)
+    h = ','.join([f"X_frame{i},Y_frame{i},Z_frame{i}" for i in range(newstars.shape[1]//3)])
     np.savetxt('output.csv', newstars, fmt='%.15f', delimiter=',', header=h)
 
 
