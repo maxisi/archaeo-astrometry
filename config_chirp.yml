@@ -1,0 +1,21 @@
+# CONFIGURATION
+
+# point to the initial location of the stars
+# we can use it to load pre-generated stars, e.g., a star map
+# based on the Milky Way
+# input: random_stars.dat
+
+# alternatively, specify a number of stars to generate
+# dynamically (randomly over the sky)
+star_number: 500
+time_samples: 1000
+
+# gravitational wave parameters
+distance_mpc: 400
+chirp_mass: 30
+
+# can increase overall amplitude by increasing this number
+amplitude_scale: 2E20
+
+# chirp duration in seconds
+duration: 0.5

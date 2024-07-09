@@ -24,8 +24,11 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Run script
+    - name: Run sinusoid
       run: python gwastrometry.py
+
+    - name: Run chirp
+      run: python gwastrometry_chirp.py
 
     - name: Upload output file
       uses: actions/upload-artifact@v4
