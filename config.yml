@@ -9,8 +9,8 @@ sep: ','
 
 # alternatively, specify a number of stars to generate
 # dynamically (randomly over the sky)
-star_number: 500
+star_number: 250
 
 # gravitational wave parameters
 amplitude: 0.1
-time_samples: 100
+time_samples: 1000
