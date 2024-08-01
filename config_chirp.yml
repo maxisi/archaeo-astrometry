@@ -7,7 +7,7 @@
 
 # alternatively, specify a number of stars to generate
 # dynamically (randomly over the sky)
-star_number: 500
+star_number: 250
 time_samples: 10000
 
 # gravitational wave parameters
